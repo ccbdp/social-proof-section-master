@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color-very-dark-magenta: hsl(300, 43%, 22%);
+    --primary-color-soft-pink: hsl(333, 80%, 67%);
+    --neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --font-family-400-500-700: 'Spartan', sans serif;
+}
+html{
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    font-family: var(--font-family-400-500-700);
+    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+     background-repeat: no-repeat, no-repeat;
+     
+    /*background-position:220% -50%, -120% 120%;*/
+    /*background-position: right 30vw bottom 50vh, left 100vw top 50vh;*/
+    background-position: top, bottom;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 2em;
+    margin-top: 3rem;
+}
+h1{
+    color: var(--primary-color-very-dark-magenta);
+}
+h2{
+    color: var(--neutral-dark-grayish-magenta);
+    font-size: 14px;
+    padding: 1em .8em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+ul{
+    list-style: none;
+}
+li img{
+    padding: 0 .3em;
+}
+.stars{
+    display: flex;
+    justify-content: center;
+    padding-bottom: .5em;
+    
+}
+h3{
+    color: var(--primary-color-very-dark-magenta);
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 0;
+}
+.rating{
+    background-color: var(--neutral-light-grayish-magenta);
+    margin: 1em;
+    padding: 1em 3em;
+    border-radius: 5px;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 60px;
+
+}
+.review{
+    background-color: var(--primary-color-very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+}
+h4{
+     color: var(--neutral-white);
+     font-weight: 500;
+     font-size: 15px;
+}
+h5{
+    color: var(--primary-color-soft-pink);
+    font-weight: 400;
+}
+.image-name{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.name{
+    padding: 0 1em;
+    line-height: 1.3em;
+}
+p{
+    color: var(--neutral-light-grayish-magenta);
+    font-weight: 400;
+    font-size: 12.5px;
+    text-align: start;
+    line-height: 1.8em;
+    /*padding:1em 2em;*/
+}
+.reviews{
+    margin: 1em;
+
+}
+
+@media screen and (min-width: 992px){
+   
+    html{
+        width: 90%;
+        margin: auto;
+        min-height: 100vh;
+        font-family: var(--font-family-400-500-700);
+        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -10% 0%, 150% 100%;
+        /*background-position: right 30vw bottom 50vh, left 100vw top 50vh;*/
+        /*background-position: left top, bottom right;*/
+        overflow-y: none;
+    }
+    
+
+    body{
+        
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(10px) 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .header{
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 3em;
+
+        
+    }
+
+    .ratings{
+        grid-row: 1/2;
+        grid-column: 2/3;
+ 
+    }
+
+    .rating{
+        display: flex;
+        text-align: center;
+        justify-content: start;
+        background-color: var(--neutral-light-grayish-magenta);
+        margin: 1em;
+        border-radius: 5px;
+        
+    }
+    .stars{
+        padding-right: 3rem;
+        justify-items: center;
+        align-self: center;
+    }
+
+
+    .reviews{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .review{
+        margin: 2rem;
+    }
+
+    .attribution{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        bottom: 0;
+    }
+
+    h1{
+        font-size: 35px;
+        padding-right: 5em;
+    }
+
+    h2{
+        
+        font-size: 16px;
+        padding: 1em 0em;
+        line-height: 1.5em;
+        font-weight: 400;
+        padding-right: 5em;
+    }
+
+    .first{
+        margin-right: 8em;
+    }
+    
+    .second{
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    .third{
+        margin-left: 8em;
+        margin-right: 2em;
+    }
+
+    
+    .two{
+        margin-top: 4em;
+    }
+    .three{
+        margin-top: 6em;
+    }
+
+   
+}
