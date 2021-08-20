@@ -17,7 +17,7 @@ html{
     margin: auto;
     min-height: 100vh;
     font-family: var(--font-family-400-500-700);
-    background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
      background-repeat: no-repeat, no-repeat;
      
     /*background-position:220% -50%, -120% 120%;*/
@@ -121,7 +121,7 @@ p{
         margin: auto;
         min-height: 100vh;
         font-family: var(--font-family-400-500-700);
-        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat, no-repeat;
         background-position: -10% 0%, 150% 100%;
         /*background-position: right 30vw bottom 50vh, left 100vw top 50vh;*/
